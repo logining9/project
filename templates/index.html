@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-card">
+            <h1 class="hero-title">Добро пожаловать 👋</h1>
+            <p class="hero-subtitle">
+                Это учебный проект на Flask. Зарегистрируйтесь или войдите,
+                чтобы начать работу.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="{{ url_for('about') }}" class="btn btn-outline">О нас</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Зарегистрироваться</a>
+                <a href="{{ url_for('login') }}" class="btn btn-ghost">Войти</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
